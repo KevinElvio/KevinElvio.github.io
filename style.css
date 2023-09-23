@@ -258,6 +258,7 @@ content{
 }
 
 @media screen and (max-width:867px) {
+
     .navbar ul {
         display: flex;
         flex-direction: column;
@@ -267,17 +268,17 @@ content{
         position: absolute;
         right: 0;
         top: 0;
-        z-index: 0;
+        z-index: 1;
         align-items: center;
         justify-content: space-evenly;
-        transform: translateX(100%);
+        opacity: 0;
         transition: all 1s;
         box-shadow: -6px 19px 29px -3px rgba(0,0,0,0.4);
         -webkit-box-shadow: -6px 19px 29px -3px rgba(0,0,0,0.4);
         -moz-box-shadow: -6px 19px 29px -3px rgba(0,0,0,0.4);
     }
     .navbar ul.slide{
-        transform: translateX(0);
+        opacity: 1;
     }
     .navbar .icon{
         display: none;
@@ -310,11 +311,11 @@ content{
     }
 
     .menara{
-        display: flex;
+        display: block;
         position: relative;
-        width: 50%;
+        width: 30%;
         margin-left: 70%;
-        margin-top: -20%;
+        margin-top: 20%;
         z-index: -1;
     }
     .content-tengah{
@@ -352,9 +353,9 @@ content{
 @media screen and (max-width:776px) {
     .menara{
         display: flex;
-        width: 50%;
+        width: 30%;
         margin-left: 70%;
-        margin-top: -10%;
+        margin-top: 22%;
     }
     .content-tengah{
         margin-top: -60%;
@@ -385,6 +386,7 @@ content{
         width: 60%;
         height: 90vh;
         position: absolute;
+        margin-right: 60%;
         right: 0;
         top: 0;
         z-index: 0;
@@ -403,9 +405,9 @@ content{
 
     .menara{
         display: flex;
-        width: 76%;
-        margin-left: 65%;
-        margin-top: -10%;
+        width: 30%;
+        margin-left: 60%;
+        margin-top: 20%;
     }
     .content-tengah h1{
         font-size: 20px;
@@ -421,11 +423,58 @@ content{
         line-height: 1.5;
     }
     .content-tengah{
-        margin-top: -100%;
+        margin-top: -70%;
 
     }
     .orang-tua ul li{
         margin-top: 50%;
         margin-left: 150px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .logo h1 a{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #2e2d2d;
+        font-size: 60%;
+    }
+    .logo img{
+        width: 20%;
+    }
+    .menara{
+        display: flex;
+        width: 30%;
+        margin-left: 60%;
+        margin-top: 40%;
+    }
+    .content-tengah h1{
+        font-size: 15px;
+        font-family: 'Poppins', Helvetica, sans-serif;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 1%;
+    }
+    .content-tengah h4{
+        font-size: 8px;
+        font-weight: 350;
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+    }
+    .content-tengah{
+        margin-top: -70%;
+    }
+    .orang-tua ul li{
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    .orang-tua ul li iconify-icon{
+        font-size: 310%;
     }
 }
